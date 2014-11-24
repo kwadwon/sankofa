@@ -1,0 +1,55 @@
+body {
+  min-height: 2000px;
+}
+.logo{
+  position:relative;
+  bottom:14px;
+}
+.navitem-above{
+  background-color:transparent;
+  border-color:transparent;
+  padding-top:5px;
+  font-size:20px;
+}
+.navitem-below{
+  background-color:#E68B84;
+  border-color:white;
+}
+.navitem-below li a{
+  color:white !important;
+}
+.glow-red>a:hover, .glow-red>a:focus{
+  color:#DB4437 !important; 
+}
+.main-pg{
+  background-image:url('../images/cover-water-white.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-color:black;
+  color:white;
+}
+.page{
+  height:100vh;
+}
+.page-gradient{
+  position:absolute;
+  content:"";
+  width:100%;
+  background:linear-gradient(rgba(256, 256, 256, 0.1),rgba(0,0,0,0.8));
+}
+.jumbo{
+  opacity:0.6;
+  text-align:center;
+  position:relative;
+  top:25vh;
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+  height:250px;
+  //color:#DB4437;
+  background-color:#DB4437;
+}
+.footer{
+  height:40vh;
+  background-color:#C7C7C7;
+}

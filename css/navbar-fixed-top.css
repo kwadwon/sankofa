@@ -13,9 +13,8 @@ body {
 }
 .navitem-below{
   background-color:#E68B84;
-  border-color:white;
 }
-.navitem-below li a{
+.navitem-below-text li a{
   color:white !important;
 }
 .glow-red>a:hover, .glow-red>a:focus{
@@ -25,7 +24,7 @@ body {
   background-image:url('../images/cover-water-white.jpg');
   background-size:cover;
   background-repeat:no-repeat;
-  background-color:black;
+  background-color:white;
   color:white;
 }
 .page{

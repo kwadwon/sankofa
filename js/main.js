@@ -6,26 +6,18 @@ $(document).ready(function(){
    navChange($(this).scrollTop()); 
   });
 
-	//fade in the opening caption
-  $(".jumbotron").fadeIn(4000, function(){
-	  console.log('faded in bro!');	
-	});
-
-
-
-
-
+  //fade in the Jumbotron 
+  $(".jumbotron").fadeIn(3000);
 
   function navChange(scrollPos){
 		var nav = $('.navitem-above');
     if (scrollPos > 30){
-      //nav.removeClass('navitem-above');
-      nav.addClass('navitem-below');
+      nav.addClass('navitem-below-text');
+      nav.addClass('navitem-below', 500);
       console.log('scroll back was changed');
     }else{
-			nav.removeClass('navitem-below');
-      console.log('the reverse');
+      nav.removeClass('navitem-below-text');
+			nav.removeClass('navitem-below', 500);
     }
-   
   };
 });

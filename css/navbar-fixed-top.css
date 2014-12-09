@@ -24,7 +24,7 @@ body {
 }
 #main-pg{
   background-image:url('../images/cover-water-white.jpg');
-  color:#FF4747;
+	color:#424242;
 }
 #main-pg-2{
 	margin-top:10vh;
@@ -85,7 +85,7 @@ body {
   width:60%;
   margin-left:auto;
   margin-right:auto;
-  border:solid 3px #FF4747;
+	border:solid 3px #424242;
   font-family:Helvetica; 
 	background-color:transparent;
 }

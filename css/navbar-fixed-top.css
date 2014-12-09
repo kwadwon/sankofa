@@ -13,7 +13,8 @@ body {
   font-size:20px;
 }
 .navitem-below{
-  background-color:#E68B84;
+  #background-color:#FF4747;
+	background-color:#424242;
 }
 .navitem-below-text li a{
   color:white !important;
@@ -21,35 +22,74 @@ body {
 .glow-red>a:hover, .glow-red>a:focus{
   color:#DB4437 !important; 
 }
-.main-pg{
+#main-pg{
   background-image:url('../images/cover-water-white.jpg');
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-color:white;
-  color:white;
+  color:#FF4747;
+}
+#main-pg-2{
+	margin-top:10vh;
+	margin-bottom:20vh;
+}
+#main-pg-3{
+	background-image:url('../images/desk.jpg');
+	height:50vh;
+	background-attachment:fixed;
+}
+#main-pg-4{
+	background-image:url('../images/details.jpg');
+	height:50vh;
+	background-attachment:fixed;
+}
+.profile{
+	height:250px;
+	width:250px;
+	margin-bottom:150px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.profile img{
+	height:100%;
+	width:100%;
+}
+.image-bg{
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.projects{
+	height:40vh;
+}
+.projects div{
+	margin-bottom:20px;
+}
+.small-page-margin{
+	margin:5vh 10vw 5vh 10vw;
+}
+.page-margin{
+	margin:5vh 15vw 5vh 15vw;
 }
 .page{
   height:100vh;
+	background-color:transparent;
 }
 .page-gradient{
   position:absolute;
   content:"";
   width:100%;
-  background:linear-gradient(rgba(256, 256, 256, 0.1),rgba(0,0,0,0.8));
+  background:linear-gradient(rgba(0,0,0,0.8),rgba(25,33,41,0.9));
 }
 .jumbo{
-  opacity:0.6;
+  font-family:walkway;
   text-align:center;
   position:relative;
   top:25vh;
   width:60%;
   margin-left:auto;
   margin-right:auto;
-  height:250px;
-  //color:#DB4437;
-  background-color:#DB4437;
+  border:solid 3px #FF4747;
+  font-family:Helvetica; 
+	background-color:transparent;
 }
 .footer{
-  height:40vh;
+  height:20vh;
   background-color:#C7C7C7;
 }

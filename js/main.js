@@ -1,5 +1,11 @@
 $(document).ready(function(){
-  //things to do when window is scrolled.
+  
+	//check scroll position
+	navChange($(window).scrollTop());
+
+	//things to do when window is scrolled.
+	
+	
 
   //first navigation.
   $(window).scroll(function(){
@@ -14,10 +20,24 @@ $(document).ready(function(){
     if (scrollPos > 30){
       nav.addClass('navitem-below-text');
       nav.addClass('navitem-below', 500);
-      console.log('scroll back was changed');
     }else{
       nav.removeClass('navitem-below-text');
 			nav.removeClass('navitem-below', 500);
     }
   };
+
+  //scrolling
+  function doParallax(){
+		$('.page').each(function(){
+			var page = $(this);
+			var xcoord = page.css('backgroundPosition').split(' ')[0];
+			$(window).scroll(function(){
+				var yPos = -(($(window).scrollTop() - page.offset().top) / 10);
+				var coords = xcoord + ' ' + yPos+'px';
+				page.css({backgroundPosition:coords});
+				//page.animate({backgroundPositionX:xcoord,backgroundPositionY:yPos+'px'},100);
+			});
+		});
+	}
+
 });

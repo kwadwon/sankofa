@@ -1,4 +1,4 @@
-body {
+eody {
   min-height: 2000px;
   background-color:white;
 }
@@ -22,9 +22,12 @@ body {
 .glow-red>a:hover, .glow-red>a:focus{
   color:#DB4437 !important; 
 }
+a#mission.red-now, a#projects.red-now, a#about.red-now{
+	color:#DB4437 !important;
+}
 #main-pg{
   background-image:url('../images/cover-water-white.jpg');
-	color:#424242;
+  color:#424242;
 }
 #main-pg-2{
 	margin-top:10vh;
@@ -32,12 +35,12 @@ body {
 }
 #main-pg-3{
 	background-image:url('../images/desk.jpg');
-	height:50vh;
+	height:60vh;
 	background-attachment:fixed;
 }
 #main-pg-4{
 	background-image:url('../images/details.jpg');
-	height:50vh;
+	height:60vh;
 	background-attachment:fixed;
 }
 .profile{
@@ -54,12 +57,6 @@ body {
 .image-bg{
 	background-size:cover;
 	background-repeat:no-repeat;
-}
-.projects{
-	height:40vh;
-}
-.projects div{
-	margin-bottom:20px;
 }
 .small-page-margin{
 	margin:5vh 10vw 5vh 10vw;

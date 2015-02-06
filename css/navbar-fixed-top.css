@@ -12,9 +12,15 @@ eody {
   padding-top:5px;
   font-size:20px;
 }
+#ham-icon{
+	display:none;
+}
 .navitem-below{
   #background-color:#FF4747;
 	background-color:#424242;
+}
+.navitem-below span#ham-icon{
+	color:white;
 }
 .navitem-below-text li a{
   color:white !important;
@@ -88,4 +94,14 @@ a#mission.red-now, a#projects.red-now, a#about.red-now{
 .footer{
   height:20vh;
   background-color:#C7C7C7;
+}
+
+
+@media only screen and (max-width: 767px){
+	#ham-icon {
+		display:initial;
+		position:absolute;
+		top:16px;
+		right:28px;
+	}
 }

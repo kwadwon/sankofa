@@ -6,8 +6,7 @@ $(document).ready(function(){
 	navChange($(window).scrollTop());
 
 	//things to do when window is scrolled.
-	
-	
+
 
   //first navigation.
   $(window).scroll(function(){

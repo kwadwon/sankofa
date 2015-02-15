@@ -85,7 +85,7 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
   background-color:transparent;
   color:white !important;
 }
-.highlight h3{
+.highlight h4{
   color:#1A51F9;
 }
 .highlight{
@@ -94,8 +94,11 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
   -moz-border-radius: 10px;
   border-radius: 10px;
   position:absolute;
-  right:-490px;
-  top:60px;
+  right:0px;
+  top:140px;
+  font-family:kirvyBold;
+  background-color:grey;
+  color:white;
 }
 .footer{
   height:5vh;

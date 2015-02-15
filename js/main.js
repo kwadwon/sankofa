@@ -76,13 +76,5 @@ $(document).ready(function(){
 		}, 1000);
 	});
 
-	//slide weekly highlight in at projects section
-	function moveHighLight(inOrOut) {
-		if (inOrOut) {
-			$(".highlight").animate({right:"0px"}, 50);
-		} else {
-			$(".highlight").animate({right:"-490px"}, 500);
-		}
-	}
 
 });

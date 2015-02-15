@@ -1,5 +1,7 @@
 $(document).ready(function(){
   
+
+  	var highLighthShown = false;
 	//check scroll position
 	navChange($(window).scrollTop());
 
@@ -16,13 +18,13 @@ $(document).ready(function(){
   $(".jumbotron").fadeIn(3000);
 
   function navChange(scrollPos){
-		var nav = $('.navitem-above');
+	var nav = $('.navitem-above');
     if (scrollPos > 30){
       nav.addClass('navitem-below-text');
       nav.addClass('navitem-below', 500);
     }else{
       nav.removeClass('navitem-below-text');
-			nav.removeClass('navitem-below', 500);
+		nav.removeClass('navitem-below', 500);
     }
 	
 		
@@ -40,6 +42,8 @@ $(document).ready(function(){
 		} else {
 			clearBlueNow();
 		}
+
+		slideHighLight();
   };
 
 	function clearBlueNow(){
@@ -60,6 +64,7 @@ $(document).ready(function(){
 		$('body').animate({
 			scrollTop: $("#main-pg-2").offset().top - $("#navbar").height()
 		}, 1000);
+		slideHighLight();
 	});
 
 	$("#projects").click(function(event){
@@ -67,6 +72,7 @@ $(document).ready(function(){
 		$('body').animate({
 			scrollTop: $(".projects").offset().top - $("#navbar").height()
 		}, 1000);
+		slideHighLight();
 	});
 
 	$("#about").click(function(event){
@@ -74,7 +80,30 @@ $(document).ready(function(){
 		$('body').animate({
 			scrollTop: $(".about").offset().top - $("#navbar").height()
 		}, 1000);
+		slideHighLight();
 	});
+
+	//slide out highlight box if not shown
+	function slideHighLight(){
+		var scrollPos = $(window).scrollTop();
+		if (!highLighthShown && ((scrollPos > $(".projects").offset().top - $("#navbar").height() - 200) && 
+					(scrollPos < $(".about").offset().top - $("#navbar").height() - 200))) {
+			// animate highligh box  to show
+			$(".highlight").animate({right:"0px"}, 1000);
+			// set highligh shown
+			highLighthShown = true;
+
+		} else if (highLighthShown && !((scrollPos > $(".projects").offset().top - $("#navbar").height() - 200) && 
+					(scrollPos < $(".about").offset().top - $("#navbar").height() - 200))) {
+			//animate highligh box to go away
+			$(".highlight").animate({right:"-490"}, 1000);
+			// set highlight not shown
+			highLighthShown = false;
+		} else {
+			//do nothing
+		}
+
+	}
 
 
 });

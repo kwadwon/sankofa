@@ -86,15 +86,15 @@ $(document).ready(function(){
 	//slide out highlight box if not shown
 	function slideHighLight(){
 		var scrollPos = $(window).scrollTop();
-		if (!highLighthShown && ((scrollPos > $(".projects").offset().top - $("#navbar").height() - 200) && 
-					(scrollPos < $(".about").offset().top - $("#navbar").height() - 200))) {
+		if (!highLighthShown && ((scrollPos > $(".projects").offset().top - $("#navbar").height() - 300) && 
+					(scrollPos < $(".about").offset().top - $("#navbar").height() - 300))) {
 			// animate highligh box  to show
 			$(".highlight").animate({right:"0px"}, 1000);
 			// set highligh shown
 			highLighthShown = true;
 
-		} else if (highLighthShown && !((scrollPos > $(".projects").offset().top - $("#navbar").height() - 200) && 
-					(scrollPos < $(".about").offset().top - $("#navbar").height() - 200))) {
+		} else if (highLighthShown && !((scrollPos > $(".projects").offset().top - $("#navbar").height() - 300) && 
+					(scrollPos < $(".about").offset().top - $("#navbar").height() - 300))) {
 			//animate highligh box to go away
 			$(".highlight").animate({right:"-490"}, 1000);
 			// set highlight not shown

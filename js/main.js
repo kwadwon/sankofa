@@ -28,24 +28,30 @@ $(document).ready(function(){
 		
 		if ((scrollPos > $("#main-pg-2").offset().top - $("#navbar").height() - 200) && 
 					(scrollPos < $(".projects").offset().top - $("#navbar").height() - 200)){
-			clearRedNow();
-			$("#mission").addClass('red-now');	
+			clearBlueNow();
+			$("#mission").addClass('blue-now');	
 		} else if ((scrollPos > $(".projects").offset().top - $("#navbar").height() - 200) && 
 					(scrollPos < $(".about").offset().top - $("#navbar").height() - 200)){
-			clearRedNow();
-			$("#projects").addClass('red-now');	
+			clearBlueNow();
+			$("#projects").addClass('blue-now');
 		} else if (scrollPos > $(".about").offset().top - $("#navbar").height() - 200){
-			clearRedNow();
-			$("#about").addClass('red-now');	
+			clearBlueNow();
+			$("#about").addClass('blue-now');	
 		} else {
-			clearRedNow();
+			clearBlueNow();
 		}
   };
 
-	function clearRedNow(){
-		$("#mission").removeClass('red-now');
-		$("#projects").removeClass('red-now');
-		$("#about").removeClass('red-now');
+	function clearBlueNow(){
+		$("#mission").removeClass('blue-now');
+		$("#mission").blur();
+
+		$("#projects").removeClass('blue-now');
+		$("#projects").blur();
+
+		$("#about").removeClass('blue-now');
+		$("#about").blur();
+
 	}
 
   //scrolling
@@ -69,5 +75,14 @@ $(document).ready(function(){
 			scrollTop: $(".about").offset().top - $("#navbar").height()
 		}, 1000);
 	});
+
+	//slide weekly highlight in at projects section
+	function moveHighLight(inOrOut) {
+		if (inOrOut) {
+			$(".highlight").animate({right:"0px"}, 50);
+		} else {
+			$(".highlight").animate({right:"-490px"}, 500);
+		}
+	}
 
 });

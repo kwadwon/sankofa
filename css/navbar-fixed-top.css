@@ -54,7 +54,6 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
 .profile{
 	height:350px;
 	width:275px;
-	margin-bottom:290px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -110,6 +109,25 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
 @media only screen and (max-width: 767px){
   .highlight {
     display:none;
+  }
+
+  #main-pg, #main-pg-3, #main-pg-4{
+    background-attachment: scroll;
+  }
+
+  #main-pg-4{
+    background-image:url('../images/parts.jpg');
+  }
+
+  #main-pg-4 > div h2{
+    top:100px;
+    position:relative;
+  }
+
+  .container-fluid{
+    padding-left:0;
+    padding-right:0;
+
   }
 }
 

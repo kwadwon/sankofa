@@ -29,7 +29,8 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
 	color:#1A51F9 !important;
 }
 #main-pg{
-  background-image:url('../images/cpu.jpg');
+  //background-image:url('../images/cpu.jpg');
+  background-image:url('../images/06-large.jpg');
 }
 #main-pg-2{
 	margin-top:10vh;
@@ -37,7 +38,8 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
 }
 #main-pg-3{
 	//background-image:url('../images/desk.jpg');
-  background-image:url('../images/06-large.jpg');
+  //background-image:url('../images/06-large.jpg');
+  background-image:url('../images/cpu.jpg');
 	height:60vh;
 	background-attachment:fixed;
   font-family: adamCG !important;
@@ -90,7 +92,6 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
   color:#1A51F9;
 }
 .highlight{
-  //border:solid 2px black;
   -webkit-border-radius: 10px; 
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -102,7 +103,6 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
   color:white;
 }
 .footer{
-  height:5vh;
   background-color:black;
   color:#1A51F9 !important;
 }

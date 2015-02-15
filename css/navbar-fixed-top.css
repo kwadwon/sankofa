@@ -29,16 +29,15 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
 	color:#1A51F9 !important;
 }
 #main-pg{
-  //background-image:url('../images/cpu.jpg');
   background-image:url('../images/06-large.jpg');
+  background-attachment:fixed;
+
 }
 #main-pg-2{
 	margin-top:10vh;
 	margin-bottom:20vh;
 }
 #main-pg-3{
-	//background-image:url('../images/desk.jpg');
-  //background-image:url('../images/06-large.jpg');
   background-image:url('../images/cpu.jpg');
 	height:60vh;
 	background-attachment:fixed;

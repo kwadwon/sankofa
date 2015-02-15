@@ -102,8 +102,15 @@ $(document).ready(function(){
 		} else {
 			//do nothing
 		}
-
 	}
+
+	//sankofa logo
+	$("#sankofa").click(function(event){
+		event.preventDefault();
+		$('body').animate({
+			scrollTop: $("#main-pg").offset().top - $("#navbar").height()
+		}, 1000);
+	});
 
 
 });

@@ -1,63 +1,65 @@
 $(document).ready(function(){
   
 
-  	var highLighthShown = false;
+	var highLighthShown = false;
+
 	//check scroll position
 	navChange($(window).scrollTop());
 
 	//things to do when window is scrolled.
 
 
-  //first navigation.
-  $(window).scroll(function(){
-   navChange($(this).scrollTop()); 
-  });
+	//first navigation.
+ 	$(window).scroll(function(){
+		navChange($(this).scrollTop()); 
+	});
 
-  //fade in the Jumbotron 
-  $(".jumbotron").fadeIn(3000);
+	//fade in the Jumbotron 
+	$(".jumbotron").fadeIn(3000);
 
-  function navChange(scrollPos){
-	var nav = $('.navitem-above');
-    if (scrollPos > 30){
-      nav.addClass('navitem-below-text');
-      nav.addClass('navitem-below', 500);
-    }else{
-      nav.removeClass('navitem-below-text');
-		nav.removeClass('navitem-below', 500);
-    }
+	//change nav color based on scroll position && change nav section header according to 
+	function navChange(scrollPos){
+		var nav = $('.navitem-above');
+    	if (scrollPos > 30){
+      		nav.addClass('navitem-below-text');
+      		nav.addClass('navitem-below', 500);
+    	}else{
+      		nav.removeClass('navitem-below-text');
+			nav.removeClass('navitem-below', 500);
+    	}
 	
 		
 		if ((scrollPos > $("#main-pg-2").offset().top - $("#navbar").height() - 200) && 
 					(scrollPos < $(".projects").offset().top - $("#navbar").height() - 200)){
-			clearBlueNow();
-			$("#mission").addClass('blue-now');	
+			clearColorNow();
+			$("#mission").addClass('color-now');	
 		} else if ((scrollPos > $(".projects").offset().top - $("#navbar").height() - 200) && 
 					(scrollPos < $(".about").offset().top - $("#navbar").height() - 200)){
-			clearBlueNow();
-			$("#projects").addClass('blue-now');
+			clearColorNow();
+			$("#projects").addClass('color-now');
 		} else if (scrollPos > $(".about").offset().top - $("#navbar").height() - 200){
-			clearBlueNow();
-			$("#about").addClass('blue-now');	
+			clearColorNow();
+			$("#about").addClass('color-now');	
 		} else {
-			clearBlueNow();
+			clearColorNow();
 		}
 
 		slideHighLight();
-  };
+	};
 
-	function clearBlueNow(){
-		$("#mission").removeClass('blue-now');
+	//clear the highlighted color from nav section on top
+	function clearColorNow(){
+		$("#mission").removeClass('color-now');
 		$("#mission").blur();
 
-		$("#projects").removeClass('blue-now');
+		$("#projects").removeClass('color-now');
 		$("#projects").blur();
 
-		$("#about").removeClass('blue-now');
+		$("#about").removeClass('color-now');
 		$("#about").blur();
-
 	}
 
-  //scrolling
+ 	//scrolling to section when nav section is clicked
 	$("#mission").click(function(event){
 		event.preventDefault();
 		$('body').animate({
@@ -103,13 +105,12 @@ $(document).ready(function(){
 		}
 	}
 
-	//sankofa logo
+	//sankofa logo prevent default behavior, slide to top
 	$("#sankofa").click(function(event){
 		event.preventDefault();
 		$('body').animate({
 			scrollTop: $("#main-pg").offset().top - $("#navbar").height()
 		}, 1000);
 	});
-
 
 });

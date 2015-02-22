@@ -1,3 +1,6 @@
+html{
+  background-color:black;
+}
 body {
   min-height: 2000px;
   background-color:white;
@@ -14,7 +17,7 @@ body {
   font-size:20px;
 }
 #ham-icon{
-  color:#1A51F9 !important;
+  color:#FF3C00 !important;
 }
 .navitem-below{
   background-color:black;
@@ -22,16 +25,15 @@ body {
 .navitem-below-text li a{
   color:white !important;
 }
-.glow-blue>a:hover, .glow-blue>a:focus{
-  color:#1A51F9 !important; 
+.glow-color>a:hover, .glow-color>a:focus{
+  color:#FF3C00 !important; 
 }
-a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
-	color:#1A51F9 !important;
+a#mission.color-now, a#projects.color-now, a#about.color-now{
+	color:#FF3C00 !important;
 }
 #main-pg{
   background-image:url('../images/06-large.jpg');
   background-attachment:fixed;
-
 }
 #main-pg-2{
 	margin-top:10vh;
@@ -42,18 +44,21 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
 	height:60vh;
 	background-attachment:fixed;
   font-family: adamCG !important;
-
 }
 #main-pg-4{
 	background-image:url('../images/details.jpg');
 	height:60vh;
 	background-attachment:fixed;
   font-family: adamCG !important;
-
+}
+#main-pg-4 h2{
+  width:64%;
+  background-color: white;
+  margin:auto;
 }
 .profile{
-	height:350px;
-	width:275px;
+	height:300px;
+	width:225px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -86,33 +91,37 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
   background-color:transparent;
   color:white !important;
 }
-.highlight h4{
-  color:#1A51F9;
-}
 .highlight{
-  -webkit-border-radius: 10px; 
-  -moz-border-radius: 10px;
-  border-radius: 10px;
   position:absolute;
   right:0px;
   top:100px;
   font-family:kirvyBold;
-  background-color:#49A8D8;
-  color:white;
+  background-color:#FF3C00;
+}
+.highlight a{
+  text-decoration: underline;
+  color:black;
+}
+.rounded {
+  -webkit-border-radius: 10px; 
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .footer{
   background-color:black;
-  color:#1A51F9 !important;
+  color:#FF3C00 !important;
+  height:100%;
+}
+.footer>div{
+  padding-top:40px;
 }
 
-@media only screen and (min-width: 1100px){
+
+@media only screen and (min-width: 1200px){
   #about_us {
     margin:5vh 10vw 5vh 10vw;
   }
-
 }
-
-
 @media only screen and (max-width: 767px){
   .highlight {
     display:none;
@@ -122,12 +131,8 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
     background-attachment: scroll;
   }
 
-  #main-pg-4{
-    background-image:url('../images/parts.jpg');
-  }
-
   #main-pg-4 > div h2{
-    top:100px;
+    top:50px;
     position:relative;
   }
 }
@@ -136,7 +141,6 @@ a#mission.blue-now, a#projects.blue-now, a#about.blue-now{
   font-family:adamCG;
   src: url('../fonts/ADAM.CG.PRO.otf');
 }
-
 @font-face{
   font-family:kirvyBold;
   src: url('../fonts/kirvy/Kirvy-Bold.otf');

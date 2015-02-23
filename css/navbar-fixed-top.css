@@ -32,7 +32,7 @@ a#mission.color-now, a#projects.color-now, a#about.color-now{
 	color:#FF3C00 !important;
 }
 #main-pg{
-  background-image:url('../images/06-large_blur2.jpg');
+  background-image:url('../images/06-large.jpg');
   background-attachment:fixed;
 }
 #main-pg-2{
@@ -55,6 +55,11 @@ a#mission.color-now, a#projects.color-now, a#about.color-now{
   width:64%;
   background-color: white;
   margin:auto;
+}
+.mesh{
+  height:100vh;
+  opacity:0.4;
+  background-image:url('../images/6ghgesn.jpg');
 }
 .profile{
 	height:300px;
@@ -90,6 +95,7 @@ a#mission.color-now, a#projects.color-now, a#about.color-now{
   margin-right:auto;
   background-color:transparent;
   color:white !important;
+  z-index:1000;
 }
 .highlight{
   position:absolute;

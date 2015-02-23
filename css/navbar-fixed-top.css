@@ -116,7 +116,7 @@ a#mission.color-now, a#projects.color-now, a#about.color-now{
 }
 .footer{
   background-color:black;
-  color:#FF3C00 !important;
+  color:white !important;
   height:100%;
 }
 .footer>div{

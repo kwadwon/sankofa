@@ -97,10 +97,11 @@ a#mission.color-now, a#projects.color-now, a#about.color-now{
   top:100px;
   font-family:kirvyBold;
   background-color:#FF3C00;
+  color:white;
 }
 .highlight a{
   text-decoration: underline;
-  color:black;
+  color:white;
 }
 .rounded {
   -webkit-border-radius: 10px; 

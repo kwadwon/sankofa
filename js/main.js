@@ -62,7 +62,7 @@ $(document).ready(function(){
  	//scrolling to section when nav section is clicked
 	$("#mission").click(function(event){
 		event.preventDefault();
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $("#main-pg-2").offset().top - $("#navbar").height()
 		}, 1000);
 		slideHighLight();
@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 	$("#projects").click(function(event){
 		event.preventDefault();
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $(".projects").offset().top - $("#navbar").height()
 		}, 1000);
 		slideHighLight();
@@ -78,7 +78,7 @@ $(document).ready(function(){
 
 	$("#about").click(function(event){
 		event.preventDefault();
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $(".about").offset().top - $("#navbar").height()
 		}, 1000);
 		slideHighLight();
@@ -108,7 +108,7 @@ $(document).ready(function(){
 	//sankofa logo prevent default behavior, slide to top
 	$("#sankofa").click(function(event){
 		event.preventDefault();
-		$('body').animate({
+		$('html, body').animate({
 			scrollTop: $("#main-pg").offset().top - $("#navbar").height()
 		}, 1000);
 	});

@@ -28,7 +28,7 @@ $(document).ready(function(){
 			nav.removeClass('navitem-below', 500);
     	}
 	
-		
+	
 		if ((scrollPos > $("#main-pg-2").offset().top - $("#navbar").height() - 200) && 
 					(scrollPos < $(".projects").offset().top - $("#navbar").height() - 200)){
 			clearColorNow();
@@ -60,6 +60,7 @@ $(document).ready(function(){
 	}
 
  	//scrolling to section when nav section is clicked
+
 	$("#mission").click(function(event){
 		event.preventDefault();
 		$('html, body').animate({
